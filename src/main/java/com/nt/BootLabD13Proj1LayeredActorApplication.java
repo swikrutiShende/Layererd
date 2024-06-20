@@ -14,6 +14,7 @@ import com.nt.Service.ServiceImpl;
 public class BootLabD13Proj1LayeredActorApplication {
 
 	public static void main(String[] args) {
+		System.out.println("BootLabD13Proj1LayeredActorApplication.main()");
 		ConfigurableApplicationContext run = SpringApplication.run(BootLabD13Proj1LayeredActorApplication.class, args);
 		ServiceImpl bean = run.getBean("service",ServiceImpl.class);
 		List<String> list=new ArrayList<>();
